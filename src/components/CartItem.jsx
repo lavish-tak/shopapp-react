@@ -7,10 +7,10 @@ const CartItem = ({item,itemIndex})=>{
     const dispatch = useDispatch();
     const removeFromCart = ()=>{
         dispatch(remove(item.id));
-        toast.success("Item removed from cart")
+        toast.error("Item removed from cart")
     }
     return (
-        <div class="ml-72 m-4 h-44 w-2/6 border-b-2 border-b-black">
+        <div class="ml-80 m-4 h-56 w-2/6 border-b-2 border-b-black">
            <div className="flex mt-8 mb-5">
             <div className="h-[180px] w-[180px]">
                 <img src={item.image} className="h-40 w-32 mr-40"/>
